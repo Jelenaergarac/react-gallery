@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.carousel {
+  display: flex;
+  margin: auto;
+  margin-top: 0.7rem;
+
+}
+.size {
+  background-position: center center;
+  background-size: cover;
+  height: 32rem;
+  align-items: center;
+}
+
+@media (max-width: 460px){
+  .size {
+    width: 22rem;
+    min-height: auto;
+  }
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

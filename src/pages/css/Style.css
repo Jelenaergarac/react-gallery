@@ -1,0 +1,138 @@
+section {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+}
+
+section .imgBox {
+    position: relative;
+    width: 50%;
+}
+
+section .imgBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg, rgb(230, 176, 214));
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+section .imgBox img {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .content-box {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section .content-box .form-box {
+
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+section .content-box .form-box h2 {
+    color: rgb(49, 3, 38);
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    border-bottom: 1.2rem;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+section .content-box .form-box .input-box {
+    margin-bottom: 0.5rem;
+}
+
+section .content-box .form-box .input-box span {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: rgb(73, 8, 48);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+section .content-box .form-box .input-box input {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    outline: none;
+    font-weight: 400;
+    border: 5px solid rgb(151, 23, 94);
+    letter-spacing: 1px;
+    background: transparent;
+    border-radius: 20px;
+    color: rgb(113, 24, 216);
+
+}
+
+
+section .content-box .form-box .input-box input[type="submit"] {
+    background-color: rgb(138, 8, 155);
+    color: cornsilk;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 700;
+}
+
+section .content-box .form-box .input-box input[type="submit"]:hover {
+    background-color: rgb(88, 25, 56);
+}
+
+section .content-box .form-box .remember {
+    margin-bottom: 0.9rem;
+    color: rgb(59, 2, 55);
+    font-weight: 500;
+    font-size: 1rem;
+}
+.reg-log{
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(122, 9, 122);
+}
+
+@media(max-width: 45rem) {
+    section .imgBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    section .content-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    section .content-box .form-box {
+        width: 100%;
+        padding: 1.8rem;
+        background: rgb(255 255 255 /0.9);
+        margin: 3.3rem;
+    }
+}

@@ -1,0 +1,189 @@
+article {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.galleries {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.galleries>.gallery {
+    flex-grow: 1;
+    flex-basis: calc((600px - 100%)*999);
+    min-width: 380px;
+    max-width: 330px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    background-color: rgb(116, 7, 116);
+    font-size: 1rem;
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 700px;
+    box-shadow: 2px 2px 15px rgba(40, 40, 50, 0.4);
+}
+
+.gallery-image {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex: 0 0 10rem;
+   
+}
+
+.gallery-image img {
+    position: relative;
+    width: 100%;
+     height: 50vh;
+    object-fit: cover;
+    
+}
+
+.gallery-content {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.gallery-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    z-index: 1;
+}
+
+.gallery-text {
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+}
+
+.gallery-readmore {
+ text-decoration: none;
+display: block;
+margin-top: 0.5rem;
+color: rgb(15, 2, 15);
+font-size: large;
+font-weight: 600;
+}
+.gallery-readmore:hover{
+    color: white;
+
+}
+
+.button {
+    padding: 1rem 4rem;
+    border-radius: 15px;
+    background-color: violet;
+    color: hsl(0, 0%, 96%);
+    font-weight: 700;
+    cursor: pointer;
+    bottom: 0.8rem;
+    border: none;
+
+
+}
+
+.nav-edit {
+    text-decoration: none;
+    margin-left: 3rem;
+    border: 2px solid violet;
+    padding: 0.6rem 1.6rem;
+    background-color: violet;
+    color: purple;
+    border-radius: 5px;
+position: absolute;
+right: 2rem;
+    
+}
+
+.nav-delete {
+    margin-left: 3rem;
+    padding: 0.6rem 2.8rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(224, 83, 83);
+    
+
+}
+
+.comments {
+    margin-left: 3rem;
+    font-size: large;
+    border-bottom: 1px solid purple;
+    flex-wrap: wrap;
+
+}
+
+.user {
+    font-weight: 600;
+    list-style: none;
+    font-style: italic;
+    margin-top: 0.5rem;
+    border-bottom: 1px dashed gray;
+    max-width: 55rem;
+    flex-wrap: wrap;
+
+}
+
+.user p {
+    font-weight: 400;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+}
+
+.delete-com {
+    padding: 0.3rem 0.8rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(206, 101, 101);
+    position: absolute;
+    right: 15rem;
+}
+.gallery-desc{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4rem;
+}
+.gall-title {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.author {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.author:hover{
+    color: rgb(8, 48, 44);
+}
+@media(max-width: 60rem) {
+    .gallery {
+        max-width: 220px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .gallery-title{
+        margin-left: 4rem;
+    }
+
+   .nav-delete {
+        margin-left: 1.2rem;
+    }
+    .nav-edit{
+        margin-right: 1.2rem;
+    }
+    
+}
